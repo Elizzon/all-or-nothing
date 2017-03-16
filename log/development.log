@@ -1,0 +1,64 @@
+Started GET "/" for 127.0.0.1 at 2017-03-16 23:55:05 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /home/sashka/.rvm/gems/ruby-2.4.0@allornothing/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/sashka/.rvm/gems/ruby-2.4.0@allornothing/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb (5.7ms)
+Completed 200 OK in 118ms (Views: 32.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-17 00:11:14 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /home/sashka/.rvm/gems/ruby-2.4.0@allornothing/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/sashka/.rvm/gems/ruby-2.4.0@allornothing/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb (3.0ms)
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-17 00:13:24 +0200
+  
+ActionController::RoutingError (uninitialized constant AplicationController):
+  
+app/controllers/home_controller.rb:1:in `<top (required)>'
+  Rendering /home/sashka/.rvm/gems/ruby-2.4.0@allornothing/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/sashka/.rvm/gems/ruby-2.4.0@allornothing/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/sashka/.rvm/gems/ruby-2.4.0@allornothing/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered collection of /home/sashka/.rvm/gems/ruby-2.4.0@allornothing/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [1 times] (29.1ms)
+  Rendered /home/sashka/.rvm/gems/ruby-2.4.0@allornothing/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (16.6ms)
+  Rendering /home/sashka/.rvm/gems/ruby-2.4.0@allornothing/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/sashka/.rvm/gems/ruby-2.4.0@allornothing/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/sashka/.rvm/gems/ruby-2.4.0@allornothing/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (315.0ms)
+Started GET "/" for 127.0.0.1 at 2017-03-17 00:14:21 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 566ms (Views: 565.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-17 00:17:23 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 153ms (Views: 23.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-17 00:17:55 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 31ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-17 00:27:50 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 9845ms (Views: 9803.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-17 00:33:38 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 400ms (Views: 385.6ms | ActiveRecord: 0.0ms)
+
+
