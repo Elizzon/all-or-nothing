@@ -1,25 +1,35 @@
-<h1>Listing posts</h1>
 
-<%= link_to 'New post', new_post_path %>
+<div class="col-9 text-center ">
+	<div><%= link_to 'New post', new_post_path %></div>
 
-<table>
-	<tr>
-		<th>Title</th>
-		<th>Text</th>
-	</tr>
 
 	<% @posts.each do |post| %>
-		<tr>
-			<td><%= post.title %></td>
-			<td><%= post.text %></td>
-			<td><%= link_to 'Show', post_path(post) %></td>
-			<td><%= link_to 'Edit', edit_post_path(post) %></td>
-			<td><%= link_to 'Destroy', post_path(post),
-              method: :delete,
-              data: { confirm: 'Are you sure?' } %></td>
-		</tr>
+		
+		
+	<div class="some-post"><%= post.title %></div>
+
+	<div class="some-text"><%= post.text %></div>
+
+	<div class="some-buttom"> <%= link_to post_path(post) do %>
+		<div class="btn btn-default">show</div>
+		<% end %>
+
+
+		<%= link_to edit_post_path(post) do %>
+		<div class="btn btn-default">Edit</div>
+		<% end %>
+
+
+		<%= link_to post_path(post),
+		  method: :delete,
+		  data: { confirm: 'Are you sure?' } do %>
+		  	<div class="btn btn-danger">Destroy</div>
+		<% end %>
+	</div>
 
 	<% end %>
+</div>
 
-</table>
+
+
 

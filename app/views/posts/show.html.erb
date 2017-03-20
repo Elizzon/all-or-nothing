@@ -1,18 +1,28 @@
-<p>
-  <strong>Title:</strong>
+<div>
   <%= @post.title %>
-</p>
+</div>
  
-<p>
-  <strong>Text:</strong>
+<div>
   <%= @post.text %>
-</p>
+</div>
 
-<h2>Comments:</h2>
-<%= render @post.comments %>
 
-<h2>add a comment: </h2>
+<div class=" col-md-12 my-new-comments">
+	<h3>Comments:</h3>
+	<%= render @post.comments %>
+
+	<h2>add a comment: </h2>
 	<%= render 'comments/form' %>
 
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+	<div class="col-12">
+		<%= link_to edit_post_path(@post) do %>
+			<div  class="btn btn-default">Edit</div>
+		<% end %> 
+
+		<%= link_to posts_path do %>
+			<div  class="btn btn-default">Back</div>
+		<% end %> 
+
+	</div>
+
+</div>

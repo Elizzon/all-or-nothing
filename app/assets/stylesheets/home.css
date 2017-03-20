@@ -1,11 +1,13 @@
 html {
   position: relative;
   min-height: 100%;
+
 }
 
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+
 }
 
 .navigate-menu {
@@ -20,6 +22,12 @@ body {
 main {
 	height: 100%;
 	width: auto;
+
+}
+
+.my-container {
+	padding-bottom: 150px;
+	padding-top: 100px;
 }
 
 /*.button-menu {
@@ -53,4 +61,29 @@ footer {
 	margin: 20px 0;
 	color: black;
 
+}
+
+.some-post {
+	padding: 15px;
+}
+.some-text {
+	padding: 15px;
+}
+.some-buttom {
+	padding: 10px;
+}
+
+
+.my-buttom-back{
+	position: relative;
+	display: block;
+	margin-left: 150px;
+}
+
+.stfmp {
+	padding-bottom: 25px;
+}
+
+.my-new-comments {
+	padding-top: 15px;
 }
