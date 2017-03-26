@@ -1,6 +1,6 @@
 
-<div class="col-9 text-center ">
-	<div><%= link_to 'New post', new_post_path %></div>
+<div class="col-11 text-center ">
+	
 
 
 	<% @posts.each do |post| %>
@@ -14,16 +14,18 @@
 		<div class="btn btn-default">show</div>
 		<% end %>
 
-
-		<%= link_to edit_post_path(post) do %>
-		<div class="btn btn-default">Edit</div>
+		<% if model_signed_in? %>
+			<%= link_to edit_post_path(post) do %>
+			<div class="btn btn-default">Edit</div>
+			<% end %>
 		<% end %>
 
-
-		<%= link_to post_path(post),
-		  method: :delete,
-		  data: { confirm: 'Are you sure?' } do %>
-		  	<div class="btn btn-danger">Destroy</div>
+		<% if model_signed_in? %>
+			<%= link_to post_path(post),
+			  method: :delete,
+			  data: { confirm: 'Are you sure?' } do %>
+			  	<div class="btn btn-danger">Destroy</div>
+			<% end %>
 		<% end %>
 	</div>
 

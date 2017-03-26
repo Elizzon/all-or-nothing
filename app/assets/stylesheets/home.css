@@ -30,14 +30,6 @@ main {
 	padding-top: 100px;
 }
 
-/*.button-menu {
-	position: relative;
-	right: 10px;
-}*/
-/*.mynavigatemenu {
-
-	float: right;
-}*/
 
 .mynavigatemenu {
 	-webkit-justify-content: flex-end;
@@ -50,7 +42,6 @@ footer {
 	position: absolute;
 	bottom: 0;
   	width: 100%;
-  /* Set the fixed height of the footer here */
   	height: 60px;
   	
 }
@@ -65,6 +56,7 @@ footer {
 
 .some-post {
 	padding: 15px;
+	margin-top: 30px;
 }
 .some-text {
 	padding: 15px;
@@ -85,5 +77,45 @@ footer {
 }
 
 .my-new-comments {
-	padding-top: 15px;
+	padding-top: 20px;
+	padding-bottom: 30px;
+
+}
+.author {
+	padding-top: 25px;
+	padding-bottom: 10px;
+	text-decoration: underline;
+	margin-left: 25px;
+}
+
+.some-comment {	
+	padding-bottom: 15px;
+	margin-left: 80px;
+}
+
+.one-comment {
+	border: 2px #e9b1b1 solid;
+	background: #fcf5e3;
+	margin: 15px;
+}
+
+
+.but-destr {
+	margin-bottom: 7px;
+	margin-left: 25px;
+}
+
+.create-new-post-in-menu {
+	margin-right: 10px;
+}
+
+a {
+	text-decoration: none !important;
+}
+
+.post-title {
+	margin-bottom: 25px;
+}
+.post-text {
+	margin-bottom: 25px;
 }

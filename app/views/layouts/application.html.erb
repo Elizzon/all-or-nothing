@@ -16,25 +16,46 @@
 		  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
-		  <a class="navbar-brand" href="#">HOME</a>
+		  	<%= link_to posts_path do %>
+				<div  class="navbar-brand">HOME</div>
+			<% end %> 
+		  
+		  <!-- 	<a class="navbar-brand" href= "#">HOME</a> -->
+		  
+		  
+		  
 
 		  <div class="collapse mynavigatemenu navbar-collapse" id="navbarNav">
 		    <ul class="navbar-nav ">
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">OnlineRadio</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">About us </a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Messanges</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">News</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Sing In</a>
-		      </li>
+
+
+				<li class="nav-item">
+					<%= link_to new_post_path do %>
+						<div class="nav-link create-new-post-in-menu">Create New Post</div>
+					<% end %>	    
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="#">About us </a>
+				</li>
+
+		     
+				<li class="nav-item">
+					<%= link_to new_model_session_path do %>
+						<div class="nav-link"> Sing In </div>
+					<% end %>
+				</li>
+
+				<% if model_signed_in? %>
+				
+					<li class="nav-item">
+						<%= link_to destroy_model_session_path, method: :delete do %>
+							<div class="nav-link"> Sing Out </div>
+						<% end %>
+					</li>
+
+				<% end %>
+
 		    </ul>
 	    	
 		  </div>

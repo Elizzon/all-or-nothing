@@ -1,15 +1,28 @@
+<div class="one-comment">
 
-<div class="author">Author: 
-	<%= comment.commenter %>
-</div>
+	<div class="author"><b>Author:</b> 
+		<%= comment.commenter %>
+	</div>
 
 
-<div>Comment:
-	<%= comment.body %>
- </div>
+	<div class="some-comment">
+		<%= comment.body %>
+	 </div>
 
-<div class="btn btn-danger">
-	<%= link_to 'Destroy Comment', [comment.post,comment],
-							method: :delete,
-							data: {confitm: 'Are you sure?'} %>
+	 
+	 <% if model_signed_in? %>
+
+		<div class="but-destr">
+			<%= link_to [comment.post,comment],
+									method: :delete,
+									data: {confitm: 'Are you sure?'} do %>
+				<div class="btn btn-danger">Destroy</div>
+			<% end %>
+		</div>
+	<% end %>
+
+		
+
+
+
 </div>

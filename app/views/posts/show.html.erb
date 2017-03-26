@@ -1,28 +1,36 @@
-<div>
+<div class="col-12 mx-auto text-center post-title">
   <%= @post.title %>
 </div>
  
-<div>
+<div class="post-text">
   <%= @post.text %>
 </div>
 
 
-<div class=" col-md-12 my-new-comments">
+<div class=" col-md-12">
+	
 	<h3>Comments:</h3>
+	<div class="my-new-comments">
 	<%= render @post.comments %>
+	</div>
 
+	<div class="add-new-comments">
 	<h2>add a comment: </h2>
 	<%= render 'comments/form' %>
-
-	<div class="col-12">
-		<%= link_to edit_post_path(@post) do %>
-			<div  class="btn btn-default">Edit</div>
-		<% end %> 
-
-		<%= link_to posts_path do %>
-			<div  class="btn btn-default">Back</div>
-		<% end %> 
-
 	</div>
+
+	
+	<div class="col-12">
+		<% if model_signed_in? %>
+			<%= link_to edit_post_path(@post) do %>
+				<div  class="btn btn-default">Edit</div>
+			<% end %> 
+		<% end %>
+
+			<%= link_to posts_path do %>
+				<div  class="btn btn-default">Back</div>
+			<% end %> 
+		</div>
+	
 
 </div>
