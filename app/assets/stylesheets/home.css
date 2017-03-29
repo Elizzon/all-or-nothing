@@ -119,3 +119,18 @@ a {
 .post-text {
 	margin-bottom: 25px;
 }
+
+.image-for-post {
+
+	
+	margin-top: 10px;
+	margin-bottom: 25px;
+}
+
+img {
+	border-radius: 30px;
+	outline: 3px solid #4d4545;
+	height: auto;
+	width: 100%;
+
+}

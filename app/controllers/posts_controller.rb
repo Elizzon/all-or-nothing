@@ -52,7 +52,7 @@ before_action :authenticate_model!, except: [ :index, :show, ]
  
 private
   	def post_params
-    	params.require(:post).permit(:title, :text)
+    	params.require(:post).permit(:title, :text, :photo)
   	end
 
 
