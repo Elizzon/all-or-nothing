@@ -134,3 +134,40 @@ img {
 	width: 100%;
 
 }
+
+.for-email-form {
+	margin-left: 50%;
+}
+
+.forgot-password {
+	margin: 20px;
+}
+
+.button-for-login-form {
+	padding: 20px;
+}
+
+.for-render-button {
+	margin-right: 265px;
+	margin-top: 20px;
+}
+.field {
+	margin-bottom: 20px;
+}
+
+#model_email {
+	width: 315px;
+}
+
+#model_password {
+	width: 315px;
+}
+
+#model_password_confirmation {
+	width: 315px;
+}
+
+.buttons-for-login {
+	margin-right: 170px;
+	margin-top: 20px;
+}
